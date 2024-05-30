@@ -48,6 +48,17 @@ data() {
         },
         invertiFatto: function(indiceElemento){
             this.listaCoseDaFare[indiceElemento].fatto = !this.listaCoseDaFare[indiceElemento].fatto
-        } 
+        },
+        modificaTask: function(indiceElemento, elemento){
+            const cambioContenuto = prompt(`Dimmi come vuoi modificare la Task "${this.listaCoseDaFare[indiceElemento].contenuto}"!`);
+            cambioContenuto.trim()
+            //Vorrei rendere solo la prima lettera grande, forse meglio con funzione. 
+            // 
+            if(cambioContenuto.length > 0){
+                this.listaCoseDaFare[indiceElemento].contenuto = cambioContenuto;
+            }else{
+                console.warn("Attento non stai inserendo nulla!")
+            }
+        }
     }
 }).mount('#app')
