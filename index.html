@@ -42,6 +42,7 @@
                 <div id="input">
                     <label for="create-new-task">Crea una nuova cosa da fare:</label>
                     <input @keyup.enter="aggiungiTask" type="text" v-model="contenutoDaAggiungere">
+                    <button @click="aggiungiTask">Aggiungi Task!</button>
                 </div>
             </div>
         </main>
