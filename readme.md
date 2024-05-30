@@ -85,5 +85,11 @@ Buon lavoro e buon divertimento!
     }
 }
 
+//***BonusFacoltativo:****//
+3 - aggiungere funzionalità "How to Add Drag and Drop to Your VueJS Project"
+
+- Da Pseudocodiciare. 
+    - Prima svolgo esercizio. 
+
 
 
