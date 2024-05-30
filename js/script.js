@@ -45,6 +45,9 @@ data() {
         },
         cancellaInput(){
             this.contenutoDaAggiungere = ""
-        }, 
+        },
+        invertiFatto: function(indiceElemento){
+            this.listaCoseDaFare[indiceElemento].fatto = !this.listaCoseDaFare[indiceElemento].fatto
+        } 
     }
 }).mount('#app')
