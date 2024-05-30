@@ -26,14 +26,14 @@
                 <div id="ul" v-if="(listaCoseDaFare.length > 0)">
                     <ul>
                         <li v-for="(item, indice) in listaCoseDaFare" :key="indice">                    
-                            <p @click="invertiFatto(indice)" :class="(item.fatto === true) ? 'fatto' : '' ">
+                            <p @click="invertiFatto(indice)" :class="(item.fatto === true) ? 'fatto' : '' " class="white">
                                 {{ item.contenuto }}
                             </p>
 
 
                             <div id="list-icon">
-                                <i @click="modificaTask(indice)" class="fa-solid fa-pen fa-xl"></i>
-                                <i @click="rimuoviTask(indice)" class="fa-solid fa-trash-can fa-xl"></i>
+                                <i @click="modificaTask(indice)" class="fa-solid fa-pen fa-xl white"></i>
+                                <i @click="rimuoviTask(indice)" class="fa-solid fa-trash-can fa-xl white"></i>
                             </div>
                         </li>
                     </ul>
@@ -44,9 +44,9 @@
                     </h3>
                 </div>
                 <div id="input">
-                    <label for="create-new-task">Crea una nuova cosa da fare:</label>
-                    <input @keyup.enter="aggiungiTask" type="text" v-model="contenutoDaAggiungere">
+                    <label for="create-new-task" class="white">Crea una nuova cosa da fare:</label>                  
                     <button @click="aggiungiTask">Aggiungi Task!</button>
+                    <input @keyup.enter="aggiungiTask" type="text" v-model="contenutoDaAggiungere">
                 </div>
             </div>
         </main>
