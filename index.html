@@ -29,8 +29,12 @@
                             <p @click="invertiFatto(indice)" :class="(item.fatto === true) ? 'fatto' : '' ">
                                 {{ item.contenuto }}
                             </p>
-        
-                            <i @click="rimuoviTask(indice)" class="fa-solid fa-trash-can fa-xl"></i>
+
+
+                            <div id="list-icon">
+                                <i @click="modificaTask(indice)" class="fa-solid fa-pen fa-xl"></i>
+                                <i @click="rimuoviTask(indice)" class="fa-solid fa-trash-can fa-xl"></i>
+                            </div>
                         </li>
                     </ul>
                 </div>
