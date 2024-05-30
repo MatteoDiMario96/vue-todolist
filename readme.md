@@ -23,10 +23,39 @@ Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
 
 
 
-MILESTONE 2
+//***MILESTONE 2****//
 Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.
-MILESTONE 3
+
+- Creare una funzione rimuoviTask(elementoIndice){
+    this.coseDaFare.splice(elementoIndice, 1)
+}
+
+- A questo punto devo aggiungere "indice al v-for" e :key="indice"
+
+
+- Creare nel file Html un icona o quello più congeniale. 
+    - Metterlo nell'li con il v-for.
+        -  Grazie al @click agganciarci la funzione rimuoviTask(indice).
+
+
+//***MILESTONE 3****//
 Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante o premendo il tasto invio, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
+
+- Creare una funzione aggiungiTask.
+    - Creo una variabile nuovaTask = {
+        contenuto: this.nuovaCosaDaFare,
+        fatto: false
+    }
+    - Aggiungere all'array coseDaFare nuovaTask
+
+
+- Creare nel file Html un input per poter aggiungere task. 
+    - Grazie a keyup.enter agganciancio la funzione aggiungiTask.
+
+- Aggiungo una nuova propietà al mio array oggetti coseDaFare: "nuovaCosaDaFare:"
+- La collego grazie grazie a v-model al mio input che cosi cambierà in tempo reale il dato. 
+
+
 Bonus:
 1 - cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 2 -  aggiungere un altro bottone che permetta la modifica di un task gia' esistente
