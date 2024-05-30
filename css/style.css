@@ -10,3 +10,7 @@ body {
     font-weight: 500;
     font-style: normal;
 }
+
+div#app{
+    padding: 3rem;
+}
