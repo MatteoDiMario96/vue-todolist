@@ -28,6 +28,8 @@ data() {
         }
     },
     methods:{
-
+        rimuoviTask: function(elementoIndice){
+            this.listaCoseDaFare.splice(elementoIndice, 1);
+        }
     }
 }).mount('#app')
