@@ -22,19 +22,27 @@
         </header>
 
         <main>
-            <ul v-if="(listaCoseDaFare.length > 0)">
-                <li v-for="(item, indice) in listaCoseDaFare" :key="indice">                    
-                    <p :class="(item.fatto === true) ? 'fatto' : '' ">
-                        {{ item.contenuto }}
-                    </p>
-
-                    <i @click="rimuoviTask(indice)" class="fa-solid fa-trash-can fa-xl"></i>
-                </li>
-            </ul>
-            <div v-else>
-                <h3>
-                    Mi dispiace ma non ci sono cose da fare. Divertiti!
-                </h3>
+            <div id="container">
+                <div id="ul" v-if="(listaCoseDaFare.length > 0)">
+                    <ul>
+                        <li v-for="(item, indice) in listaCoseDaFare" :key="indice">                    
+                            <p :class="(item.fatto === true) ? 'fatto' : '' ">
+                                {{ item.contenuto }}
+                            </p>
+        
+                            <i @click="rimuoviTask(indice)" class="fa-solid fa-trash-can fa-xl"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div v-else>
+                    <h3>
+                        Mi dispiace ma non ci sono cose da fare. Divertiti!
+                    </h3>
+                </div>
+                <div id="input">
+                    <label for="create-new-task">Crea una nuova cosa da fare:</label>
+                    <input @keyup.enter="aggiungiTask" type="text" v-model="contenutoDaAggiungere">
+                </div>
             </div>
         </main>
     </div>
