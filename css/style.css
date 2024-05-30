@@ -85,7 +85,11 @@ div#input > input{
     color: #1b8f91;
 }
 div#input > button{
-    padding: .3rem .6rem;
+    padding: .7rem 1.2rem;
+    background-color: #122c44;
+    border: transparent;
+    border-radius: 1rem;
+    color: white;
 }
 
 div#input > label {
