@@ -13,25 +13,39 @@ body {
 
 div#app{
     padding: 3rem;
+    background-color: #263849;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .fatto{
     text-decoration: line-through;
+    text-decoration-color: #35BCBF;
 }
 
 main div#container{
     width: 60%;
     margin: 0 auto;
+    background-color: #41506B;
+    border-radius: 1rem;
+    margin: 0 auto;
 }
+
 
 header h1{
     text-align: center;
     margin-bottom: 2rem;
+    color: #35BCBF;
 }
 
 main > div > div > ul {
     margin-bottom: 6rem;
+    padding: 2rem;
 }
+
+
 
 
 main ul li {
@@ -39,6 +53,7 @@ main ul li {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    border-radius: .5rem;
 }
 
 main > div > h3 {
@@ -52,4 +67,25 @@ i {
 div#input{
     display: flex;
     justify-content: space-around;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+div#input > input{
+    width: 100%;
+    height: 40px;
+    margin-top: 1rem;
+    color: #1b8f91;
+}
+div#input > button{
+    padding: .3rem .6rem;
+}
+
+div#input > label {
+    align-self: center;
+    text-decoration: underline;
+    text-decoration-color: #35BCBF;
+}
+
+.white {
+    color: white;
 }
