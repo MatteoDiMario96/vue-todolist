@@ -71,3 +71,19 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 2 -  aggiungere un altro bottone che permetta la modifica di un task gia' esistente
 Buon lavoro e buon divertimento!
 
+- Aggiungo dove voglio credo vicino quello per eliminare.
+    - Icona, testo, bottone... per editare.
+        - Collego la funzione cambiaContenuto(indiceElemento) al click.
+
+- Creo una funzione cambiaContenuto(indiceElemento){
+    const cambioContenuto = prompt("Come vuoi cambiare contenuto ?)
+    cambioContenuto.trim();
+    if( cambioContenuto.length > 0){
+        this.coseDaFare[indiceElemento].contenuto = cambioContenuto;
+    }else{
+        console.warn("Attento non stai inserendo niente");
+    }
+}
+
+
+
