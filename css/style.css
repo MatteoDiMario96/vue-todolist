@@ -23,6 +23,7 @@ div#app{
 .fatto{
     text-decoration: line-through;
     text-decoration-color: #35BCBF;
+    text-decoration-style: double;
 }
 
 main div#container{
@@ -56,8 +57,11 @@ main ul li {
     border-radius: .5rem;
 }
 
-main > div > h3 {
-    margin-top: 3rem;
+main > div > div > h4,
+main > div > div > h2 {
+    text-align: center;
+    padding: 3rem;
+    color: white;
 }
 
 i {
