@@ -24,12 +24,21 @@ data() {
                 contenuto: "Incontrare Sara",
                 fatto: false,
             },
-        ]
+        ],
+        contenutoDaAggiungere: "",
         }
     },
     methods:{
         rimuoviTask: function(elementoIndice){
             this.listaCoseDaFare.splice(elementoIndice, 1);
+        },
+        aggiungiTask: function(){
+            const nuovaTask = {
+                contenuto: this.contenutoDaAggiungere,
+                fatto: false,
+            }
+
+            this.listaCoseDaFare.push(nuovaTask);
         }
     }
 }).mount('#app')
