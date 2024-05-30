@@ -25,7 +25,7 @@
             <div id="container">
                 <div id="ul" v-if="(listaCoseDaFare.length > 0)">
                     <ul>
-                        <li v-for="(item, indice) in listaCoseDaFare" :key="indice">                    
+                        <li v-for="(item, indice) in listaCoseDaFare" :key="indice" draggable @dragstart="startDrag($event, item)">                    
                             <p @click="invertiFatto(indice)" :class="(item.fatto === true) ? 'fatto' : '' " class="white">
                                 {{ item.contenuto }}
                             </p>
