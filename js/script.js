@@ -38,7 +38,13 @@ data() {
                 fatto: false,
             }
 
-            this.listaCoseDaFare.push(nuovaTask);
-        }
+            if(nuovaTask.contenuto.length > 0){
+                this.listaCoseDaFare.push(nuovaTask);
+                this.cancellaInput()
+            }    
+        },
+        cancellaInput(){
+            this.contenutoDaAggiungere = ""
+        }, 
     }
 }).mount('#app')
