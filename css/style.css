@@ -19,7 +19,7 @@ div#app{
     text-decoration: line-through;
 }
 
-main ul{
+main div#container{
     width: 60%;
     margin: 0 auto;
 }
@@ -27,6 +27,10 @@ main ul{
 header h1{
     text-align: center;
     margin-bottom: 2rem;
+}
+
+main > div > div > ul {
+    margin-bottom: 6rem;
 }
 
 
@@ -39,4 +43,9 @@ main ul li {
 
 main > div > h3 {
     margin-top: 3rem;
+}
+
+div#input{
+    display: flex;
+    justify-content: space-around;
 }
