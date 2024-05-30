@@ -24,7 +24,7 @@
         <main>
             <ul>
                 <li v-for="item in listaCoseDaFare">
-                    <p>
+                    <p :class="(item.fatto === true) ? 'fatto' : '' ">
                         {{ item.contenuto }}
                     </p>
                 </li>

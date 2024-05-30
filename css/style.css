@@ -14,3 +14,7 @@ body {
 div#app{
     padding: 3rem;
 }
+
+.fatto{
+    text-decoration: line-through;
+}

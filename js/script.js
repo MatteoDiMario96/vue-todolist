@@ -9,8 +9,8 @@ data() {
                 fatto: false,
             },
             {
-                contenuto: "Anadare dal dentista",
-                fatto: false,
+                contenuto: "Andare dal dentista",
+                fatto: true,
             },
             {
                 contenuto: "Andare al mare",
