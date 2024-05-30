@@ -15,7 +15,21 @@
 </head>
 <body>
     <div id="app">
+        <header>
+            <h1>
+                Lista cose da fare:
+            </h1>
+        </header>
 
+        <main>
+            <ul>
+                <li v-for="item in listaCoseDaFare">
+                    <p>
+                        {{ item.contenuto }}
+                    </p>
+                </li>
+            </ul>
+        </main>
     </div>
 
     <!--Script Vue3-->
