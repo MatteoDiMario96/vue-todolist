@@ -58,6 +58,8 @@ main ul li {
 }
 
 main > div > div > h4,
+main > div > div > h5,
+main > div > div > h6,
 main > div > div > h2 {
     text-align: center;
     padding: 3rem;
