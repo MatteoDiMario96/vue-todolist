@@ -56,8 +56,18 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 - La collego grazie grazie a v-model al mio input che cosi cambierà in tempo reale il dato. 
 
 
-Bonus:
+//***Bonus:****//
 1 - cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
+
+- Creo una funzione invertiFatto(elementoIndice){
+    this.coseDaFare[elementoIndice].fatto = !this.coseDaFare[elementoIndice].fatto
+}
+
+- Collego questa funzione al click sul testo del li quindi immagino un p un h qualcos....
+
+
+
+//***Bonus2:****//
 2 -  aggiungere un altro bottone che permetta la modifica di un task gia' esistente
 Buon lavoro e buon divertimento!
 
