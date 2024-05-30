@@ -59,6 +59,11 @@ data() {
             }else{
                 console.warn("Attento non stai inserendo nulla!")
             }
+        },
+        startDrag(evt, indiceElemento) {
+            evt.dataTransfer.dropEffect = 'move'
+            evt.dataTransfer.effectAllowed = 'move'
+            evt.dataTransfer.setData('dataIndiceTask', indiceElemento)
         }
     }
 }).mount('#app')
