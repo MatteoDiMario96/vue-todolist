@@ -18,3 +18,15 @@ div#app{
 .fatto{
     text-decoration: line-through;
 }
+main ul{
+    width: 60%;
+}
+
+
+main ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+}
