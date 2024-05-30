@@ -30,12 +30,14 @@ Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo vie
     this.coseDaFare.splice(elementoIndice, 1)
 }
 
-- A questo punto devo aggiungere "indice al v-for" e :key="indice"
-
-
 - Creare nel file Html un icona o quello più congeniale. 
     - Metterlo nell'li con il v-for.
         -  Grazie al @click agganciarci la funzione rimuoviTask(indice).
+
+- A questo punto devo aggiungere "indice al v-for" e :key="indice"
+
+
+
 
 
 //***MILESTONE 3****//
